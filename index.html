@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-160325315-2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-160325315-2');
+    </script>
+
+    <meta charset="utf-8">
+    <title>Baco - Vino y Bistro</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Annie+Use+Your+Telescope|Architects+Daughter|Give+You+Glory|Indie+Flower|Marck+Script|Neucha|Satisfy|Shadows+Into+Light" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+    <div id="logo-responsive" class="shadow-strong">
+        <a href="#restaurant">
+            <img src="img/logo-baco.png" alt="">
+        </a>
+    </div>
+    <header class="shadow">
+        <div class="inner-header">
+            <a href="#restaurant">
+                <img src="img/logo-baco.png" alt="" id="logo">
+            </a>
+            <nav>
+                <a href="#restaurant" id="btn-restaurant">Restaurant</a>&nbsp;&nbsp;
+                <a href="#boutique" id="btn-boutique">Tienda Vinos</a>&nbsp;&nbsp;
+                <a href="https://webmail.elbaco.cl" id="btn-boutique">WebMail</a>
+                <!--<a href="#trabaja" id="btn-trabaja">Trabaja con Nosotros</a>	-->
+            </nav>
+        </div>
+    </header>
+
+    <!-- RESTAURANT -->
+    <div id="page-container">
+        <div class="outer-page img-background" id="restaurant" data-echo-background="img/restaurant.JPG"></div>
+        <div class="outer-page gradient shadow-strong">
+            <div class="inner-page">
+                <h2 id="anc-restaurant">Restaurant</h2>
+                <div id="page-info-restaurant">
+                    <p>Nueva de Lyon 113, Providencia</p>
+                    <p><i class="fa fa-phone-square" aria-hidden="true"></i> +56 2 2231 4444</p>
+                    <br>
+                    <p>Lunes a Sabado 12:30 a 00:30 h</p>
+                    <p>Domingo 12:30 a 23:30 h</p>
+                    <br/>
+                    <a href="https://www.google.cl/maps/place/Baco/@-33.4207416,-70.6126473,17z/data=!3m1!4b1!4m5!3m4!1s0x9662cf6633ae5805:0x9cd71edc5c022144!8m2!3d-33.4207416!4d-70.6104586?hl=en" class="action-button">
+                        <i class="fa fa-map-marker" aria-hidden="true"></i> Mapa
+                    </a>
+                    <a href="pdf/carta-restaurant.pdf" class="action-button">
+                        <i class="fa fa-book" aria-hidden="true"></i> Carta
+                    </a>
+                </div>
+                <br />
+                <br />
+            </div>
+        </div>
+
+        <!-- BOUTIQUE -->
+        <div class="outer-page img-background" id="boutique" data-echo-background="img/boutique-optimized.jpg">
+        </div>
+        <div class="outer-page gradient shadow-strong" id="anc-boutique">
+            <div class="inner-page">
+                <h2>Tienda Vinos</h2>
+                <p>Santa Magdalena 116, Providencia</p>
+                <p>Lunes a Sábado 12:00 a 20:00 hrs.</p>
+                <p>Tel: +56 2 2231 4444</p>
+                <br/>
+                <a href="https://www.google.fr/maps/place/Sta+Magdalena+116,+Providencia,+Regi%C3%B3n+Metropolitana,+Chile/@-33.4204102,-70.6122213,17z/data=!3m1!4b1!4m5!3m4!1s0x9662cf67d4fbf869:0xa020edce744d87a0!8m2!3d-33.4204102!4d-70.6100326" class="action-button">
+                    <i class="fa fa-map-marker" aria-hidden="true"></i> Mapa
+                </a>
+                <a href="./pdf/carta-restaurant.pdf" class="action-button">
+                    <i class="fa fa-book" aria-hidden="true"></i> Carta
+                </a>
+                <br />
+                <br />
+            </div>
+        </div>
+
+        <!-- Trabaja con Nosotros 
+      <div class="outer-page img-background" id="trabaja" data-echo-background="img/mesa.jpg">
+      </div>
+      <div class="outer-page gradient shadow-strong" id="anc-trabaja"> 
+        <div class="inner-page">
+          <h2 id="anc-Trabaja">Trabaja con Nosotros</h2 >
+				<form action="contacto.php" method="post" enctype="multipart/form-data">				
+					<label for="nombre">Nombre:</label>
+					<input id="nombre" type="text" name="nombre" placeholder="Nombre y Apellido" required="" />
+					<label for="email">Email:</label>
+					<input id="email" type="email" name="email" placeholder="ejemplo@correo.com" required="" />
+					<label for="adjunto">Adjuntar Documento:</label>
+					<input type="file" name="adjunto" />
+					<label for="mensaje">Mensaje:</label>
+					<textarea id="mensaje" name="mensaje" placeholder="Mensaje" required=""></textarea>
+					<input id="submit" type="submit" name="submit" value="Enviar" />
+				</form>
+		</div>
+      </div>
+-->
+        <script src="script/echo.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="script/script.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</body>
+
+</html>

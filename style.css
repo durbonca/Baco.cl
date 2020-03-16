@@ -1,0 +1,186 @@
+/* HEADER */
+/* HEADER */
+header {
+  background: #732619;
+  text-align: center;
+  height: 70px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  margin: 0; }
+
+.inner-header {
+  max-width: 960px;
+  margin: auto;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: space-between;
+  width: 100%; }
+
+#logo {
+  margin-top: 10px;
+  width: 140px; }
+  @media screen and (max-width: 1000px) {
+    #logo {
+      display: none; } }
+
+#logo-responsive {
+  display: none;
+  padding: 20px;
+  background-color: #732619; }
+  @media screen and (max-width: 1000px) {
+    #logo-responsive {
+      display: flex;
+      justify-content: center; } }
+
+#logo-responsive img {
+  width: 140px; }
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 25%; }
+  @media screen and (max-width: 1000px) {
+    nav {
+      width: 100%;
+      justify-content: space-around; } }
+
+nav > a {
+  color: #E4F1FE;
+  font-size: 1em; }
+
+nav > a:hover {
+  color: #cc5d49; }
+  @media screen and (max-width: 1000px) {
+    nav > a:hover {
+      color: #E4F1FE; } }
+
+.selected-nav {
+  color: #b7edb6 !important; }
+
+.outer-page {
+  outline: none;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  background-image: url("img/asfalt-dark.png"); }
+
+.inner-page {
+  width: 100%;
+  text-align: center;
+  max-width: 900px;
+  color: #E4F1FE; }
+
+.inner-page > h2 {
+  font-size: 2.4em;
+  outline: none; }
+
+.img-background {
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: 100%;
+  height: 600px;
+  z-index: -1;
+  position: relative; }
+  @media screen and (max-width: 1000px) {
+    .img-background {
+      background-size: 1000px; } }
+
+/* RESTAURANT */
+/* RESTAURANT */
+/* BOURIQUE */
+/* BOULANGERIE */
+body {
+  margin: 0;
+  padding: 0;
+  height: 200px;
+  padding-top: 70px;
+  background-color: #754842;
+  font-family: Sans-serif; }
+
+a {
+  text-decoration: none; }
+
+.gradient {
+  background: #732619; }
+
+.shadow {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); }
+
+.shadow-strong {
+  box-shadow: 0 3px 100px rgba(0, 0, 0, 0.56), 0 3px 60px rgba(0, 0, 0, 0.63); }
+
+button {
+  font-size: 1.3em;
+  background: none;
+  border: none;
+  font-family: Sans-serif;
+  color: #E4F1FE;
+  outline: none; }
+
+button p {
+  display: inline; }
+
+button:hover p {
+  display: inline;
+  margin-left: 2px;
+  margin-right: 2px; }
+
+h2 {
+  font-family: "Satisfy", cursive; }
+
+.action-button {
+  color: #E4F1FE;
+  padding: 6px;
+  border-top: 0.5px solid #E4F1FE;
+  border-bottom: 0.5px solid #E4F1FE;
+  margin: 20px; }
+
+.action-button i {
+  margin-right: 10px; }
+label {
+    display:block;
+    margin-top:20px;
+    letter-spacing:1px;
+}
+.formulario {
+    display:block;
+    margin:0 auto;
+    width:510px;
+    color: #666666;
+    font-family:Arial;
+}
+form {
+    margin:0 auto;
+    width:400px;
+}
+ 
+input, textarea {
+    width:380px;
+    height:27px;
+    background:#666666;
+    border:2px solid #f6f6f6;
+    padding:10px;
+    margin-top:5px;
+    font-size:10px;
+    color:#ffffff;
+}
+ 
+textarea {
+    height:150px;
+}
+ 
+#submit {
+    width:85px;
+    height:35px;
+    border:none;
+    margin-top:20px;
+    cursor:pointer;
+}
+/*# sourceMappingURL=style2.css.map */
