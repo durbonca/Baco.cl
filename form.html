@@ -25,6 +25,10 @@
     <link rel="stylesheet" href="css/style.css" />
 
     <style>
+        body {
+            background-image: url("./img/asfalt-dark.png");
+        }
+        
         .wrap-menu {
             display: table;
             width: 440px;
@@ -81,89 +85,124 @@
             font-family: "lato";
             color: white;
         }
+        
+        @media (min-width: 992px) {
+            .col-lg-5 {
+                max-width: 50%;
+            }
+        }
     </style>
 </head>
 
 <div id="page-container">
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: #732619; margin-bottom: 10%;">
-        <a class="navbar-brand" href="index.html">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top menu-card-shadow" style="background-color: #732619;">
+        <a class="navbar-brand" href="#">
             <!-- <img src="img/logo-baco.png" width="30" height="30" class="d-inline-block align-top" alt=""> -->BACO
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="./index.html#restaurant">Restaurant<span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./index.html#anc-boutique"
+              >Tienda Vinos</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#top">Despachos</a>
+                </li>
+            </ul>
+        </div>
     </nav>
 </div>
 
-<!--MENU DELIVERY START-->
+<!--whatsapp button-->
 
-<div class="container mt-5 pt-5">
-    <div class="row d-flex justify-content-between">
-        <div class="col-md-5 left">
-            <div class="wrap-menu">
-                <h2 class="category-item">
-                    <span>Ensaladas</span>
-                    <i class="ic-cate"></i>
-                </h2>
-                <div class="row-menu-wrap">
-                    <div class="row-menu">
-                        <a class="item-menu">Quinoa</a>
-                        <span class="item-prise">7.000 $</span>
-                    </div>
-                    <span class="gold-line"></span>
-                    <span class="item-descr">con “Kale”, Tomate, Palta y Pepino.</span>
-                </div>
-                <div class="row-menu-wrap">
-                    <div class="row-menu">
-                        <a class="item-menu">Salmón</a>
-                        <span class="item-prise">8.000$</span>
-                    </div>
-                    <span class="gold-line"></span>
-                    <span class="item-descr">con Salmón Pochado, Marinado y Dressing César.</span
+<a href="form.html" class="whatsapp" target="_blank">
+    <i class="fa fa-whatsapp whatsapp-icon"></i
+  ></a>
+
+  <!--whatsapp button-->
+
+  <!--MENU DELIVERY START-->
+
+  <div
+    class="container mt-5 pt-5 mb-5 pb-5 px-2 menu-card-shadow"
+    style="background-color: #732619"
+  >
+    <h1 class="text-center text-light">Nuestro Menu Delivery</h1>
+    <h2 class="text-center text-light mb-5">Para despachos por el local</h2>
+    <div class="row d-flex justify-content-around">
+      <div class="col-10 col-md-8 col-lg-5">
+        <div class="wrap-menu">
+          <h2 class="category-item">
+            <span>Ensaladas</span>
+            <i class="ic-cate"></i>
+    </h2>
+    <div class="row-menu-wrap">
+        <div class="row-menu">
+            <a class="item-menu">Quinoa</a>
+            <span class="item-prise">7.000$</span>
+        </div>
+        <span class="gold-line"></span>
+        <span class="item-descr">con “Kale”, Tomate, Palta y Pepino.</span>
+    </div>
+    <div class="row-menu-wrap">
+        <div class="row-menu">
+            <a class="item-menu">Salmón</a>
+            <span class="item-prise">8.000$</span>
+        </div>
+        <span class="gold-line"></span>
+        <span class="item-descr">con Salmón Pochado, Marinado y Dressing César.</span
             >
           </div>
           <div class="row-menu-wrap">
             <div class="row-menu">
               <a class="item-menu">Quesos</a>
               <span class="item-prise">8.000$</span>
-                </div>
-                <span class="gold-line"></span>
-                <span class="item-descr">con Nuestra Selección de 4 Quesos y Nueces.</span
+    </div>
+    <span class="gold-line"></span>
+    <span class="item-descr">con Nuestra Selección de 4 Quesos y Nueces.</span
             >
           </div>
           <div class="row-menu-wrap">
             <div class="row-menu">
               <a class="item-menu">Canard</a>
               <span class="item-prise">8.000$</span>
-            </div>
-            <span class="gold-line"></span>
-            <span class="item-descr">con Magret, Confit, Mollejas y Foie Gras.</span
+    </div>
+    <span class="gold-line"></span>
+    <span class="item-descr">con Magret, Confit, Mollejas y Foie Gras.</span
             >
           </div>
         </div>
       </div>
 
-      <div class="col-md-5 right">
+      <div class="col-10 col-md-8  col-lg-5">
         <div class="wrap-menu">
           <h2 class="category-item">
             <span>&nbsp;&nbsp;Pastas&nbsp;&nbsp;</span>
-            <i class="ic-cate"></i>
-            </h2>
-            <div class="row-menu-wrap">
-                <div class="row-menu">
-                    <a class="item-menu">Ñoquis</a>
-                    <span class="item-prise">9.000$</span>
-                </div>
-                <span class="gold-line"></span>
-                <span class="item-descr">Salsa Cuatro Quesos y Nueces.</span>
-            </div>
-            <div class="row-menu-wrap">
-                <div class="row-menu">
-                    <a class="item-menu">Lasaña del Huerto</a>
-                    <span class="item-prise">9.000$</span>
-                </div>
-                <span class="gold-line"></span>
-                <span class="item-descr">con Zapallo Italiano, Champiñones, Berenjena, Espinaca, Tomate,
+    <i class="ic-cate"></i>
+    </h2>
+    <div class="row-menu-wrap">
+        <div class="row-menu">
+            <a class="item-menu">Ñoquis</a>
+            <span class="item-prise">9.000$</span>
+        </div>
+        <span class="gold-line"></span>
+        <span class="item-descr">Salsa Cuatro Quesos y Nueces.</span>
+    </div>
+    <div class="row-menu-wrap">
+        <div class="row-menu">
+            <a class="item-menu">Lasaña del Huerto</a>
+            <span class="item-prise">9.000$</span>
+        </div>
+        <span class="gold-line"></span>
+        <span class="item-descr">con Zapallo Italiano, Champiñones, Berenjena, Espinaca, Tomate,
               Pimientos y Pesto</span
             >
           </div>
@@ -172,22 +211,22 @@
         <div class="wrap-menu">
           <h2 class="category-item">
             <span>Bacoteos</span>
-                <i class="ic-cate"></i>
-                </h2>
+        <i class="ic-cate"></i>
+        </h2>
 
-                <div class="row-menu-wrap">
-                    <div class="row-menu">
-                        <a class="item-menu">Terrine de Foie Gras</a>
-                        <span class="item-prise">7.000$</span>
-                    </div>
-                    <span class="gold-line"></span>
-                    <span class="item-descr">“ Mi - Cuit ”.</span>
-                </div>
+        <div class="row-menu-wrap">
+            <div class="row-menu">
+                <a class="item-menu">Terrine de Foie Gras</a>
+                <span class="item-prise">7.000$</span>
             </div>
+            <span class="gold-line"></span>
+            <span class="item-descr">“ Mi - Cuit ”.</span>
         </div>
     </div>
-    <div class="row d-flex justify-content-between">
-        <div class="col-md-5 right">
+    </div>
+    </div>
+    <div class="row d-flex justify-content-around">
+        <div class="col-10 col-md-8  col-lg-5">
             <div class="wrap-menu">
                 <h2 class="category-item">
                     <span>&nbsp;&nbsp;Carnes&nbsp;&nbsp;</span>
@@ -229,7 +268,7 @@
         </div>
     </div>
 
-    <div class="col-md-5 right">
+    <div class="col-10 col-md-8  col-lg-5">
         <div class="wrap-menu">
             <h2 class="category-item">
                 <span>&nbsp;&nbsp;Tablas&nbsp;&nbsp;</span>
@@ -269,69 +308,75 @@
         <span class="gold-line"></span>
         <span class="item-descr">Nuestra Selección de 3 Quesos.</span>
     </div>
-</div>
-</div>
+    </div>
+    </div>
 
-<div class="col-md-5 right">
-    <div class="wrap-menu">
-        <h2 class="category-item">
-            <span>Fantasías</span>
-            <i class="ic-cate"></i>
-        </h2>
-        <div class="row-menu-wrap">
-            <div class="row-menu">
-                <a class="item-menu">Chupe de Locos</a>
-                <span class="item-prise">9.000$</span>
+    <div class="col-10 col-md-8  col-lg-5">
+        <div class="wrap-menu">
+            <h2 class="category-item">
+                <span>Fantasías</span>
+                <i class="ic-cate"></i>
+            </h2>
+            <div class="row-menu-wrap">
+                <div class="row-menu">
+                    <a class="item-menu">Chupe de Locos</a>
+                    <span class="item-prise">9.000$</span>
+                </div>
+                <span class="gold-line"></span>
+                <span class="item-descr"></span>
             </div>
-            <span class="gold-line"></span>
-            <span class="item-descr"></span>
-        </div>
-        <div class="row-menu-wrap">
-            <div class="row-menu">
-                <a class="item-menu">Médula de Res</a>
-                <span class="item-prise">7.000$</span>
+            <div class="row-menu-wrap">
+                <div class="row-menu">
+                    <a class="item-menu">Médula de Res</a>
+                    <span class="item-prise">7.000$</span>
+                </div>
+                <span class="gold-line"></span>
+                <span class="item-descr">Cuatro Unidades.</span>
             </div>
-            <span class="gold-line"></span>
-            <span class="item-descr">Cuatro Unidades.</span>
-        </div>
-        <div class="row-menu-wrap">
-            <div class="row-menu">
-                <a class="item-menu">Bacotillas</a>
-                <span class="item-prise">8.000$</span>
+            <div class="row-menu-wrap">
+                <div class="row-menu">
+                    <a class="item-menu">Bacotillas</a>
+                    <span class="item-prise">8.000$</span>
+                </div>
+                <span class="gold-line"></span>
+                <span class="item-descr">Cuatro “ Feuilletes ” de Champiñon.</span>
             </div>
-            <span class="gold-line"></span>
-            <span class="item-descr">Cuatro “ Feuilletes ” de Champiñon.</span>
-        </div>
-        <div class="row-menu-wrap">
-            <div class="row-menu">
-                <a class="item-menu">Quiche Lorraine</a>
-                <span class="item-prise">7.000$</span>
+            <div class="row-menu-wrap">
+                <div class="row-menu">
+                    <a class="item-menu">Quiche Lorraine</a>
+                    <span class="item-prise">7.000$</span>
+                </div>
+                <span class="gold-line"></span>
+                <span class="item-descr">Con Tocino Y Emmental.</span>
             </div>
-            <span class="gold-line"></span>
-            <span class="item-descr">Con Tocino Y Emmental.</span>
-        </div>
-        <div class="row-menu-wrap">
-            <div class="row-menu">
-                <a class="item-menu">Quiche de Puerro</a>
-                <span class="item-prise">7.000$</span>
+            <div class="row-menu-wrap">
+                <div class="row-menu">
+                    <a class="item-menu">Quiche de Puerro</a>
+                    <span class="item-prise">7.000$</span>
+                </div>
+                <span class="gold-line"></span>
+                <span class="item-descr">con Emmental.</span>
             </div>
-            <span class="gold-line"></span>
-            <span class="item-descr">con Emmental.</span>
         </div>
     </div>
-</div>
-</div>
-</div>
-<!--MENU DELIVERY END-->
+    </div>
+    </div>
+    <!--MENU DELIVERY END-->
 
-<body id="body">
-    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js "></script>
-    <script src="script/script.js "></script>
-    <script src="script/menu.js "></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js " integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo " crossorigin="anonymous "></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js " integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1 " crossorigin="anonymous "></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js " integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM " crossorigin="anonymous "></script>
-</body>
+    <a href="form.html" style="text-decoration: none;">
+        <button type="button" class="btn-block btn-danger pb-3 pt-3 fixed-bottom">
+      Solicitar por despacho
+    </button>
+    </a>
+
+    <body id="body">
+        <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+        <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js "></script>
+        <script src="script/script.js "></script>
+        <script src="script/menu.js "></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js " integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo " crossorigin="anonymous "></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js " integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1 " crossorigin="anonymous "></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js " integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM " crossorigin="anonymous "></script>
+    </body>
 
 </html>

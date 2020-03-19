@@ -274,11 +274,17 @@ textarea {
     border-radius: 50px;
     text-align: center;
     font-size: 30px;
-    z-index: 100;
+    z-index: 1050;
 }
 
 .whatsapp-icon {
     margin-top: 13px;
+}
+
+.menu-card-shadow {
+    -webkit-box-shadow: -4px 14px 26px 20px rgba(0, 0, 0, 0.7);
+    -moz-box-shadow: -4px 14px 26px 20px rgba(0, 0, 0, 0.7);
+    box-shadow: -4px 14px 26px 20px rgba(0, 0, 0, 0.7);
 }
 
 
