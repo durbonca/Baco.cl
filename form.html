@@ -32,7 +32,7 @@
         
         h1,
         h2,
-        {
+        span {
             font-family: 'Balthazar', serif;
         }
         
@@ -55,9 +55,9 @@
         }
         
         .wrap-menu .category-item .ic-cate {
-            display: inline-block;
-            width: 235px;
-            height: 27px;
+            /*   display: inline-block; */
+            /*  width: 235px;
+            height: 27px; */
         }
         
         .wrap-menu .row-menu-wrap {
@@ -100,7 +100,7 @@
         @media (max-width: 460px) {
             .wrap-menu {
                 width: auto;
-                max-width: 440px;
+                /* max-width: 440px; */
             }
         }
         
@@ -111,37 +111,37 @@
         }
         
         hr.style1 {
-            border-top: 3px solid #4B4C5B;
-            margin-bottom: -10px;
+            border-top: 1px solid #4B4C5B;
+            margin-bottom: -15px;
         }
         
         hr.style2 {
-            border-top: 6px solid #A73434;
-            margin-bottom: -10px;
+            border-top: 2px solid #A73434;
+            margin-bottom: -15px;
         }
         
         hr.style3 {
-            border-top: 6px solid #4B4C5B;
-            margin-bottom: -10px;
+            border-top: 2px solid #4B4C5B;
+            margin-bottom: -12px;
         }
         
         hr.style4 {
-            border-top: 12px solid #A73434;
-            margin-bottom: -10px;
+            border-top: 4px solid #A73434;
+            margin-bottom: -12px;
         }
         
         hr.style5 {
-            border-top: 6px solid #4B4C5B;
-            margin-bottom: -10px;
+            border-top: 2px solid #4B4C5B;
+            margin-bottom: -15px;
         }
         
         hr.style6 {
-            border-top: 6px solid #A73434;
-            margin-bottom: -10px;
+            border-top: 2px solid #A73434;
+            margin-bottom: -15px;
         }
         
         hr.style7 {
-            border-top: 3px solid #4B4C5B;
+            border-top: 1px solid #4B4C5B;
         }
     </style>
 </head>
@@ -165,8 +165,16 @@
               >Tienda Vinos</a
             >
           </li>
-          <li class="nav-item">
-            <a class="nav-link active" href="#top">Carta Despachos</a>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Carta Para Llevar
+            </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="form.html">Platos</a>
+                        <a class="dropdown-item" href="panaderia.html">Panadería</a>
+                        <a class="dropdown-item" href="#">Vinos</a>
+
+                    </div>
                 </li>
             </ul>
 
@@ -190,7 +198,7 @@
 
 <!--MENU DELIVERY START-->
 
-<div class="container mt-5 pt-5 mb-5 pb-5 px-2 menu-card-shadow" style="background-color: #fff">
+<div id="menu-restaurant" class="container mt-5 pt-5 mb-5 pb-5 px-2 menu-card-shadow" style="background-color: #fff">
     <div class="row ">
         <div class="col-10 offset-1 d-flex justify-content-center">
             <img src="./img/logo_menu.png" class="mw-75 w-75 " alt="">
@@ -214,7 +222,7 @@
                             <hr class="style6">
                             <hr class="style7">
                         </div>
-                        <span>Ensaladas</span>
+                        <span>ENSALADAS</span>
                         <div class="col">
                             <hr class="style1">
                             <hr class="style2">
@@ -224,7 +232,7 @@
                             <hr class="style6">
                             <hr class="style7">
                         </div>
-                        <i class="ic-cate"></i>
+                        <!--<i class="ic-cate"></i>-->
                 </h1>
                 <div class="row-menu-wrap">
                     <div class="row-menu d-flex justify-content-between">
@@ -288,7 +296,7 @@
                                 <hr class="style6">
                                 <hr class="style7">
                             </div>
-                            <span>&nbsp;&nbsp;Pastas&nbsp;&nbsp;</span>
+                            <span>&nbsp;&nbsp;PASTAS&nbsp;&nbsp;</span>
                             <div class="col">
                                 <hr class="style1">
                                 <hr class="style2">
@@ -298,7 +306,7 @@
                                 <hr class="style6">
                                 <hr class="style7">
                             </div>
-                            <i class="ic-cate"></i>
+                            <!--<i class="ic-cate"></i>-->
                     </h1>
 
 
@@ -339,7 +347,7 @@
                                     <hr class="style6">
                                     <hr class="style7">
                                 </div>
-                                <span>Bacoteos</span>
+                                <span>BACOTEOS</span>
                                 <div class="col">
                                     <hr class="style1">
                                     <hr class="style2">
@@ -349,7 +357,7 @@
                                     <hr class="style6">
                                     <hr class="style7">
                                 </div>
-                                <i class="ic-cate"></i>
+                                <!--<i class="ic-cate"></i>-->
                         </h1>
 
                         <div class="row-menu-wrap">
@@ -392,7 +400,7 @@
                                         <hr class="style6">
                                         <hr class="style7">
                                     </div>
-                                    <span>&nbsp;&nbsp;Carnes&nbsp;&nbsp;</span>
+                                    <span>&nbsp;&nbsp;CARNES&nbsp;&nbsp;</span>
                                     <div class="col">
                                         <hr class="style1">
                                         <hr class="style2">
@@ -402,7 +410,7 @@
                                         <hr class="style6">
                                         <hr class="style7">
                                     </div>
-                                    <i class="ic-cate"></i>
+                                    <!--<i class="ic-cate"></i>-->
                             </h1>
 
 
@@ -477,7 +485,7 @@
                                             <hr class="style6">
                                             <hr class="style7">
                                         </div>
-                                        <span>&nbsp;&nbsp;Tablas&nbsp;&nbsp;</span>
+                                        <span>&nbsp;&nbsp;TABLAS&nbsp;&nbsp;</span>
                                         <div class="col">
                                             <hr class="style1">
                                             <hr class="style2">
@@ -487,7 +495,7 @@
                                             <hr class="style6">
                                             <hr class="style7">
                                         </div>
-                                        <i class="ic-cate"></i>
+                                        <!--<i class="ic-cate"></i>-->
                                 </h1>
 
                                 <div class="row-menu-wrap">
@@ -550,7 +558,7 @@
                                                 <hr class="style6">
                                                 <hr class="style7">
                                             </div>
-                                            <span>Fantasías</span>
+                                            <span>FANTASÍAS</span>
                                             <div class="col">
                                                 <hr class="style1">
                                                 <hr class="style2">
@@ -560,7 +568,7 @@
                                                 <hr class="style6">
                                                 <hr class="style7">
                                             </div>
-                                            <i class="ic-cate"></i>
+                                            <!--<i class="ic-cate"></i>-->
                                     </h1>
 
                                     <div class="row-menu-wrap">
@@ -633,7 +641,7 @@
                                                     <hr class="style6">
                                                     <hr class="style7">
                                                 </div>
-                                                <span>Del Mar</span>
+                                                <span>DEL MAR</span>
                                                 <div class="col">
                                                     <hr class="style1">
                                                     <hr class="style2">
@@ -645,7 +653,7 @@
                                                 </div>
 
                                         </h1>
-                                        <i class="ic-cate"></i>
+                                        <!--<i class="ic-cate"></i>-->
 
                                         <div class="row-menu-wrap">
                                             <div class="row-menu d-flex justify-content-between">
@@ -698,7 +706,7 @@
                                                         <hr class="style6">
                                                         <hr class="style7">
                                                     </div>
-                                                    <span>&nbsp;&nbsp;Postres&nbsp;&nbsp;</span>
+                                                    <span>&nbsp;&nbsp;POSTRES&nbsp;&nbsp;</span>
                                                     <div class="col">
                                                         <hr class="style1">
                                                         <hr class="style2">
@@ -708,7 +716,7 @@
                                                         <hr class="style6">
                                                         <hr class="style7">
                                                     </div>
-                                                    <i class="ic-cate"></i>
+                                                    <!--<i class="ic-cate"></i>-->
                                             </h1>
 
 
@@ -753,6 +761,9 @@
                                     </div>
                                 </div>
                                 <!--MENU DELIVERY END-->
+
+
+
 
                                 <a href="tel:+56959157833" style="text-decoration: none;">
                                     <button type="button" class="btn-block btn-danger pb-3 pt-3 fixed-bottom">

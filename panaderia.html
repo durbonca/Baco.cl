@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-160325315-2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag("js", new Date());
+
+        gtag("config", "UA-160325315-2");
+    </script>
+
+    <meta charset="utf-8" />
+    <title>Baco - Vino y Bistro</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=Annie+Use+Your+Telescope|Architects+Daughter|Give+You+Glory|Indie+Flower|Marck+Script|Neucha|Satisfy|Shadows+Into+Light" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css2?family=Balthazar&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css" />
+
+    <style>
+        body {
+            background-image: url("./img/asfalt-dark.png");
+        }
+        
+        h1,
+        h2,
+        span {
+            font-family: 'Balthazar', serif;
+        }
+        
+        .tittle-item {
+            font-weight: bold;
+        }
+        
+        .wrap-menu {
+            display: table;
+            width: 440px;
+            max-width: 440px;
+        }
+        
+        .wrap-menu .category-item {
+            /* width: 80%; */
+            margin: 0 auto;
+            text-align: center;
+            font-size: 3em;
+            color: #0f0f0f;
+        }
+        
+        .wrap-menu .category-item .ic-cate {
+            /*   display: inline-block; */
+            /*  width: 235px;
+            height: 27px; */
+        }
+        
+        .wrap-menu .row-menu-wrap {
+            margin-bottom: 35px;
+        }
+        
+        .wrap-menu .row-menu-wrap .row-menu {
+            display: table-row;
+        }
+        
+        .wrap-menu .row-menu-wrap .row-menu .item-menu {
+            display: table-cell;
+            width: 90%;
+            font-size: 21px;
+            font-family: 'Balthazar', serif;
+            color: #0f0f0f;
+        }
+        
+        .wrap-menu .row-menu-wrap .row-menu .item-prise {
+            display: table-cell;
+            font-size: 21px;
+            font-family: 'Balthazar', serif;
+            color: #0f0f0f;
+        }
+        
+        .gold-line {
+            display: inline-block;
+            width: 100%;
+            height: 4px;
+            margin-bottom: 8px;
+            background-color: #9e9393;
+        }
+        
+        .item-descr {
+            font-size: 16px;
+            font-family: 'Balthazar', serif;
+            color: #0f0f0f;
+        }
+        
+        @media (max-width: 460px) {
+            .wrap-menu {
+                width: auto;
+                /* max-width: 440px; */
+            }
+        }
+        
+        @media (min-width: 992px) {
+            .col-lg-5 {
+                max-width: 50%;
+            }
+        }
+        
+        hr.style1 {
+            border-top: 1px solid #4B4C5B;
+            margin-bottom: -15px;
+        }
+        
+        hr.style2 {
+            border-top: 2px solid #A73434;
+            margin-bottom: -15px;
+        }
+        
+        hr.style3 {
+            border-top: 2px solid #4B4C5B;
+            margin-bottom: -12px;
+        }
+        
+        hr.style4 {
+            border-top: 4px solid #A73434;
+            margin-bottom: -12px;
+        }
+        
+        hr.style5 {
+            border-top: 2px solid #4B4C5B;
+            margin-bottom: -15px;
+        }
+        
+        hr.style6 {
+            border-top: 2px solid #A73434;
+            margin-bottom: -15px;
+        }
+        
+        hr.style7 {
+            border-top: 1px solid #4B4C5B;
+        }
+    </style>
+</head>
+
+<div id="page-container">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top menu-card-shadow" style="background-color: #732619;">
+        <a class="navbar-brand" href="./index.html">
+            <!-- <img src="img/logo-baco.png" width="30" height="30" class="d-inline-block align-top" alt=""> -->BACO
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="./index.html#restaurant">Restaurant<span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./index.html#anc-boutique"
+              >Tienda Vinos</a
+            >
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Carta Para Llevar
+            </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="form.html">Platos</a>
+                        <a class="dropdown-item" href="panaderia.html">Panadería</a>
+                        <a class="dropdown-item" href="#">Vinos</a>
+
+                    </div>
+                </li>
+            </ul>
+            <ul class="navbar-nav ml-md-auto">
+                <a class="nav-item nav-link mr-md-2" href="tel:+56959157833" aria-haspopup="true" aria-expanded="false">
+                    <i class="fa fa-phone whatsapp-icon">&nbsp;+56-9-5915-7833</i>
+                </a>
+            </ul>
+
+        </div>
+    </nav>
+</div>
+
+<!--whatsapp button-->
+
+<!-- <a href="tel:+56959157833" class="whatsapp" target="_blank">
+    <i class="fa fa-whatsapp whatsapp-icon"></i
+  ></a> -->
+
+<!--whatsapp button-->
+
+<!-- MeNU PANADERIA BEGING-->
+
+<div id="menu-panaderia" class="container mt-5 pt-5 mb-5 pb-5 px-2 menu-card-shadow" style="background-color: #fff">
+    <div class="row ">
+        <div class="col-10 offset-1 d-flex justify-content-center">
+            <img src="./img/logo_menu.png" class="mw-75 w-75 " alt="">
+        </div>
+    </div>
+    <h2 class="text-center mb-5">Panadería y charcutería...</h2>
+    <!--  <h2 class="text-center text-light mb-5">Para despachos por el local</h2> -->
+    <div class="row d-flex justify-content-around">
+        <div class="col-10 col-sm-10 col-md-8 col-lg-5">
+            <div class="wrap-menu row">
+
+
+                <h1 class="category-item tittle-item">
+                    <div class="row d-flex align-items-center">
+                        <div class="col">
+                            <hr class="style1">
+                            <hr class="style2">
+                            <hr class="style3">
+                            <hr class="style4">
+                            <hr class="style5">
+                            <hr class="style6">
+                            <hr class="style7">
+                        </div>
+                        <span>PANADERÍA</span>
+                        <div class="col">
+                            <hr class="style1">
+                            <hr class="style2">
+                            <hr class="style3">
+                            <hr class="style4">
+                            <hr class="style5">
+                            <hr class="style6">
+                            <hr class="style7">
+                        </div>
+                        <!--<i class="ic-cate"></i>-->
+                </h1>
+                <div class="row-menu-wrap">
+                    <div class="row-menu d-flex justify-content-between">
+                        <h2><a class="item-menu tittle-item">Baguette</a></h2>
+
+                        <div class="col-2">
+                            <span class="item-prise">$1.000</span>
+                        </div>
+                    </div>
+                    <span class="item-descr pl-1"></span>
+                    <span class="gold-line"></span>
+                </div>
+                <div class="row-menu-wrap">
+                    <div class="row-menu d-flex justify-content-between">
+                        <h2><a class="item-menu tittle-item">Croissant</a>
+                        </h2>
+                        <div class="col-2">
+                            <span class="item-prise">$1.000</span>
+                        </div>
+                    </div>
+                    <span class="item-descr"></span>
+                    <span class="gold-line"></span>
+                </div>
+                <div class="row-menu-wrap">
+                    <div class="row-menu d-flex justify-content-between">
+                        <h2><a class="item-menu tittle-item">Pan de Chocolate</a>
+                        </h2>
+                        <div class="col-2">
+                            <span class="item-prise">$1.000</span>
+                        </div>
+                    </div>
+                    <span class="item-descr"></span>
+                    <span class="gold-line"></span>
+                </div>
+                <div class="row-menu-wrap">
+                    <div class="row-menu d-flex justify-content-between">
+                        <h2><a class="item-menu tittle-item">Pan de Pasas</a>
+                        </h2>
+                        <div class="col-2">
+                            <span class="item-prise">$1.000</span>
+                        </div>
+                    </div>
+                    <span class="item-descr"></span>
+                    <span class="gold-line"></span>
+                </div>
+                <div class="row-menu-wrap">
+                    <div class="row-menu d-flex justify-content-between">
+                        <h2><a class="item-menu tittle-item">Brioche</a>
+                        </h2>
+                        <div class="col-2">
+                            <span class="item-prise">$1.000</span>
+                        </div>
+                    </div>
+                    <span class="item-descr"></span>
+                    <span class="gold-line"></span>
+                </div>
+                <div class="row-menu-wrap">
+                    <div class="row-menu d-flex justify-content-between">
+                        <h2><a class="item-menu tittle-item">Pan Integral</a>
+                        </h2>
+                        <div class="col-2">
+                            <span class="item-prise">$1.000</span>
+                        </div>
+                    </div>
+                    <span class="item-descr"></span>
+                    <span class="gold-line"></span>
+                </div>
+                <div class="row-menu-wrap">
+                    <div class="row-menu d-flex justify-content-between">
+                        <h2><a class="item-menu tittle-item">Pan Blanco</a>
+                        </h2>
+                        <div class="col-2">
+                            <span class="item-prise">$1.000</span>
+                        </div>
+                    </div>
+                    <span class="item-descr"></span>
+                    <span class="gold-line"></span>
+                </div>
+                <div class="row-menu-wrap">
+                    <div class="row-menu d-flex justify-content-between">
+                        <h2><a class="item-menu tittle-item">Pan de Semilla</a>
+                        </h2>
+                        <div class="col-2">
+                            <span class="item-prise">$1.000</span>
+                        </div>
+                    </div>
+                    <span class="item-descr"></span>
+                    <span class="gold-line"></span>
+                </div>
+                <div class="row-menu-wrap">
+                    <div class="row-menu d-flex justify-content-between">
+                        <h2><a class="item-menu tittle-item">Pan de Linaza y Sesamo</a>
+                        </h2>
+                        <div class="col-2">
+                            <span class="item-prise">$1.000</span>
+                        </div>
+                    </div>
+                    <span class="item-descr"></span>
+                    <span class="gold-line"></span>
+                </div>
+                </div>
+            </div>
+
+
+            <div class="col-10 col-md-8  col-lg-5">
+                <div class="wrap-menu">
+
+                    <h1 class="category-item tittle-item">
+                        <div class="row d-flex align-items-center">
+                            <div class="col">
+                                <hr class="style1">
+                                <hr class="style2">
+                                <hr class="style3">
+                                <hr class="style4">
+                                <hr class="style5">
+                                <hr class="style6">
+                                <hr class="style7">
+                            </div>
+                            <span>&nbsp;&nbsp;QUESOS&nbsp;&nbsp;</span>
+                            <div class="col">
+                                <hr class="style1">
+                                <hr class="style2">
+                                <hr class="style3">
+                                <hr class="style4">
+                                <hr class="style5">
+                                <hr class="style6">
+                                <hr class="style7">
+                            </div>
+                            <!--<i class="ic-cate"></i>-->
+                    </h1>
+
+
+                    <div class="row-menu-wrap">
+                        <div class="row-menu d-flex justify-content-between">
+                            <h2><a class="item-menu tittle-item">Roquefort</a>
+                            </h2>
+                            <div class="col-2">
+                                <span class="item-prise">$3.700</span>
+                            </div>
+                        </div>
+                        <span class="item-descr">100GR</span>
+                        <span class="gold-line"></span>
+                    </div>
+                    <div class="row-menu-wrap">
+                        <div class="row-menu d-flex justify-content-between">
+                            <h2><a class="item-menu tittle-item">Callaquis</a>
+                            </h2>
+                            <div class="col-2">
+                                <span class="item-prise">$3.800</span>
+                            </div>
+                        </div>
+                        <span class="item-descr">200GR
+                                                        <span class="gold-line"></span></span>
+                    </div>
+
+                    <div class="row-menu-wrap">
+                        <div class="row-menu d-flex justify-content-between">
+                            <h2><a class="item-menu tittle-item">P’tit Basque</a>
+                            </h2>
+                            <div class="col-2">
+                                <span class="item-prise">$13.500</span>
+                            </div>
+                        </div>
+                        <span class="item-descr">+/- 600GR</span>
+                        <span class="gold-line"></span>
+                    </div>
+
+                    <div class="row-menu-wrap">
+                        <div class="row-menu d-flex justify-content-between">
+                            <h2><a class="item-menu tittle-item">Brillat Savarin</a>
+                            </h2>
+                            <div class="col-2">
+                                <span class="item-prise">$29.000</span>
+                            </div>
+                        </div>
+                        <span class="item-descr">1 Unidad</span>
+                        <span class="gold-line"></span>
+                    </div>
+                    <div class="row-menu-wrap">
+                        <div class="row-menu d-flex justify-content-between">
+                            <h2><a class="item-menu tittle-item">Brillat Savarin</a>
+                            </h2>
+                            <div class="col-2">
+                                <span class="item-prise">$14.500</span>
+                            </div>
+                        </div>
+                        <span class="item-descr">1/2 Unidad</span>
+                        <span class="gold-line"></span>
+                    </div>
+                    <div class="row-menu-wrap">
+                        <div class="row-menu d-flex justify-content-between">
+                            <h2><a class="item-menu tittle-item">Brillat Savarin</a>
+                            </h2>
+                            <div class="col-2">
+                                <span class="item-prise">$7.250</span>
+                            </div>
+                        </div>
+                        <span class="item-descr">1/4 Unidad</span>
+                        <span class="gold-line"></span>
+                    </div>
+                    <div class="row-menu-wrap">
+                        <div class="row-menu d-flex justify-content-between">
+                            <h2><a class="item-menu tittle-item">Comté</a>
+                            </h2>
+                            <div class="col-2">
+                                <span class="item-prise">$5.500</span>
+                            </div>
+                        </div>
+                        <span class="item-descr">220GR</span>
+                        <span class="gold-line"></span>
+                    </div>
+                    <div class="row-menu-wrap">
+                        <div class="row-menu d-flex justify-content-between">
+                            <h2><a class="item-menu tittle-item">Emmental</a>
+                            </h2>
+                            <div class="col-2">
+                                <span class="item-prise">$2.800</span>
+                            </div>
+                        </div>
+                        <span class="item-descr">+/- 200GR</span>
+                        <span class="gold-line"></span>
+                    </div>
+
+
+                    </div>
+
+                    <div class="wrap-menu">
+
+                        <h1 class="category-item tittle-item">
+                            <div class="row d-flex align-items-center">
+                                <div class="col">
+                                    <hr class="style1">
+                                    <hr class="style2">
+                                    <hr class="style3">
+                                    <hr class="style4">
+                                    <hr class="style5">
+                                    <hr class="style6">
+                                    <hr class="style7">
+                                </div>
+                                <span>JAMÓN</span>
+                                <div class="col">
+                                    <hr class="style1">
+                                    <hr class="style2">
+                                    <hr class="style3">
+                                    <hr class="style4">
+                                    <hr class="style5">
+                                    <hr class="style6">
+                                    <hr class="style7">
+                                </div>
+                                <!--<i class="ic-cate"></i>-->
+                        </h1>
+
+                        <div class="row-menu-wrap">
+                            <div class="row-menu d-flex justify-content-between">
+                                <h2><a class="item-menu tittle-item">Jamón Serrano Proscuitto</a>
+                                </h2>
+                                <div class="col-2">
+                                    <span class="item-prise">$14.000</span>
+                                </div>
+                            </div>
+                            <span class="item-descr"></span>
+                            <span class="gold-line"></span>
+                        </div>
+
+
+
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+
+            <!-- MeNU PANADERIA END-->
+
+            <a href="tel:+56959157833" style="text-decoration: none;">
+                <button type="button" class="btn-block btn-danger pb-3 pt-3 fixed-bottom">
+            <i class="fa fa-phone whatsapp-icon"></i> Llamar a despachos
+    </button>
+            </a>
+
+            <body id="body">
+                <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+                <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js "></script>
+                <script src="script/script.js "></script>
+                <script src="script/menu.js "></script>
+                <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js " integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo " crossorigin="anonymous "></script>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js " integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1 " crossorigin="anonymous "></script>
+                <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js " integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM " crossorigin="anonymous "></script>
+            </body>
+
+</html>
