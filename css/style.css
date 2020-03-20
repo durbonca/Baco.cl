@@ -70,6 +70,12 @@ header {
     }
 }
 
+@media screen and (min-width: 767px) {
+    .sub-title {
+        visibility: hidden;
+    }
+}
+
 nav>a {
     color: #e4f1fe;
     font-size: 1em;
