@@ -295,3 +295,42 @@ textarea {
 
 
 /*# sourceMappingURL=style2.css.map */
+
+.dropdown-menu {
+    background-color: #732619;
+}
+
+.dropdown-item {
+    color: white;
+}
+
+.dropdown>.dropdown-menu {
+    top: 200%;
+    transition: 0.3s all ease-in-out;
+}
+
+.dropdown:hover>.dropdown-menu {
+    display: block;
+    top: 100%;
+}
+
+.dropdown>.dropdown-toggle:active {
+    /*Without this, clicking will make it sticky*/
+    pointer-events: none;
+}
+
+@media (min-width: 992px) {
+    .img-crs {
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 991px) {
+    .img-crs {
+        max-height: 100%;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
