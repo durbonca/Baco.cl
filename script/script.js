@@ -1,3 +1,12 @@
+time_delivery = document.getElementById("time-delivery");
+time_delivery.addEventListener("click", activate);
+time_delivery.addEventListener("touchstart", activate);
+
+function activate() {
+    time_delivery.classList.add("unactive-horarios");
+    time_delivery.classList.remove("active-horarios");
+}
+
 var scroll = new SmoothScroll('a[href*="#"]', {
     speed: 1500,
     speedAsDuration: true

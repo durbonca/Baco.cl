@@ -288,9 +288,9 @@ textarea {
 }
 
 .menu-card-shadow {
-    -webkit-box-shadow: -4px 14px 26px 20px rgba(0, 0, 0, 0.7);
-    -moz-box-shadow: -4px 14px 26px 20px rgba(0, 0, 0, 0.7);
-    box-shadow: -4px 14px 26px 20px rgba(0, 0, 0, 0.7);
+    -webkit-box-shadow: -4px 9px 26px 20px rgba(0, 0, 0, 0.7);
+    -moz-box-shadow: -4px 9px 26px 20px rgba(0, 0, 0, 0.7);
+    box-shadow: -4px 9px 26px 20px rgba(0, 0, 0, 0.7);
 }
 
 
@@ -341,14 +341,22 @@ textarea {
     position: fixed;
     background-color: #732619;
     right: 0px;
-    top: -35px;
+    top: -45px;
     z-index: 1029;
     padding: 5px;
     padding-top: 20px;
-    box-shadow: -4px 14px 26px 20px rgba(0, 0, 0, 0.7);
+    box-shadow: -4px 7px 13px 10px rgba(0, 0, 0, 0.7);
     border-bottom-left-radius: 25px;
+}
+
+.active-horarios {
     -webkit-animation: slide-bottom cubic-bezier(0.25, 0.46, 0.45, 0.94) 2s both;
     animation: slide-bottom cubic-bezier(0.25, 0.46, 0.45, 0.94) 2s both;
+}
+
+.unactive-horarios {
+    -webkit-animation: slide-top 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+    animation: slide-top 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
 .delivery-time hr {
@@ -374,5 +382,27 @@ textarea {
     100% {
         -webkit-transform: translateY(100px);
         transform: translateY(100px);
+    }
+}
+
+@-webkit-keyframes slide-top {
+    0% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+    100% {
+        -webkit-transform: translateY(-100px);
+        transform: translateY(-100px);
+    }
+}
+
+@keyframes slide-top {
+    0% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+    100% {
+        -webkit-transform: translateY(-100px);
+        transform: translateY(-100px);
     }
 }
