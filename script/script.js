@@ -3,6 +3,12 @@ var scroll = new SmoothScroll('a[href*="#"]', {
     speedAsDuration: true
 });
 
+$('#panelPrecios [data-toggle="tooltip"]').tooltip({
+    animated: "fade",
+    placement: "bottom",
+    html: true
+});
+
 //To add color to each button when scroll, but without the boulangerie it bugs.
 // $(window).scroll(function() {
 //   var wScroll = $(this).scrollTop();

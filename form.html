@@ -170,9 +170,9 @@
                 Carta Para Llevar
             </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="form.html">Platos</a>
+                        <a class="dropdown-item" href="form.html">Platos<span class="sr-only">(current)</span></a>
                         <a class="dropdown-item" href="panaderia.html">Panadería</a>
-                        <a class="dropdown-item" href="#">Vinos</a>
+                        <a class="dropdown-item" href="./pdf/CartaVinosD.pdf">Vinos</a>
 
                     </div>
                 </li>
@@ -234,8 +234,11 @@
                         </div>
                         <!--<i class="ic-cate"></i>-->
                 </h1>
-                <div class="row-menu-wrap">
+                <div class="row-menu-wrap" id="panelPrecios">
+                    <a class="min" data-toggle="tooltip" title="<img src='./img/thumbnails/Bacotilla.JPG' width=185px/>">ola</a>
                     <div class="row-menu d-flex justify-content-between">
+
+
                         <h2><a class="item-menu tittle-item">Quinoa</a></h2>
 
                         <div class="col-2">
@@ -246,8 +249,8 @@
                     <span class="gold-line"></span>
                 </div>
                 <div class="row-menu-wrap">
-                    <div class="row-menu d-flex justify-content-between">
-                        <h2><a class="item-menu tittle-item">Salmón</a>
+                    <div class="row-menu d-flex justify-content-between" id="panelPrecios">
+                        <h2><a data-toggle="tooltip" title="<img src='http://placekitten.com/g/200/200' />" class="item-menu tittle-item">Salmón</a>
                         </h2>
                         <div class="col-2">
                             <span class="item-prise">$8.000</span>
@@ -759,6 +762,26 @@
                                             </div>
                                         </div>
                                     </div>
+
+
+                                    <div class="container">
+                                        <br/>
+                                        <div class="row" id="panelPrecios">
+                                            <div class="items">
+                                                <ul>
+                                                    <li>
+                                                        <a data-toggle="tooltip" title="<img src='https://getbootstrap.com/apple-touch-icon.png' />">
+                                              Hola Mundo!
+                                            </a></li>
+                                                    <li>
+                                                        <a data-toggle="tooltip" title="<img src='http://utbcn.com/img/logosCursas/logo_UTBCN_180x180.png' />">
+                                             Hola Mundo!
+                                            </a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+
                                 </div>
                                 <!--MENU DELIVERY END-->
 
@@ -767,18 +790,18 @@
 
                                 <a href="tel:+56959157833" style="text-decoration: none;">
                                     <button type="button" class="btn-block btn-danger pb-3 pt-3 fixed-bottom">
-            <i class="fa fa-phone whatsapp-icon"></i> Llamar a despachos
+            <i class="fa fa-phone whatsapp-icon"></i> Llamar
     </button>
                                 </a>
 
                                 <body id="body">
                                     <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
                                     <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js "></script>
-                                    <script src="script/script.js "></script>
                                     <script src="script/menu.js "></script>
                                     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js " integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo " crossorigin="anonymous "></script>
                                     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js " integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1 " crossorigin="anonymous "></script>
                                     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js " integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM " crossorigin="anonymous "></script>
+                                    <script src="script/script.js "></script>
                                 </body>
 
 </html>
