@@ -1,79 +1,44 @@
-time_delivery = document.getElementById("time-delivery");
-time_delivery.addEventListener("click", activate);
-time_delivery.addEventListener("touchstart", activate);
+var date =
+    var carta = nombre
 
-function activate() {
-    time_delivery.classList.add("unactive-horarios");
-    time_delivery.classList.remove("active-horarios");
-}
+var fileName = carta + date
 
 var scroll = new SmoothScroll('a[href*="#"]', {
     speed: 1500,
     speedAsDuration: true
 });
 
-$('#panelPrecios [data-toggle="tooltip"]').tooltip({
-    animated: "fade",
-    placement: "bottom",
-    html: true
-});
-
-//To add color to each button when scroll, but without the boulangerie it bugs.
-// $(window).scroll(function() {
-//   var wScroll = $(this).scrollTop();
-//   if (wScroll + 80 > $('#anc-boulangerie').offset().top - ($(window).height())) {
-//     $('#btn-boulangerie').addClass('selected-nav');
-//     $('#btn-boutique').removeClass('selected-nav');
-//     $('#btn-restaurant').removeClass('selected-nav');
-//   }
-//   else if (wScroll > $('#anc-boutique').offset().top - ($(window).height() / 1)) {
-//     $('#btn-boulangerie').removeClass('selected-nav');
-//     $('#btn-boutique').addClass('selected-nav');
-//     $('#btn-restaurant').removeClass('selected-nav');
-//   }
-//   else if (wScroll > $('#anc-restaurant').offset().top - ($(window).height() / 1)) {
-//     $('#btn-boulangerie').removeClass('selected-nav');
-//     $('#btn-boutique').removeClass('selected-nav');
-//     $('#btn-restaurant').addClass('selected-nav');
-//   }
-// });
-
-// Select all links with hashes
-/* 
-$('a[href*="#"]')
-    // Remove links that don't actually link to anything
-    .not('[href="#"]')
-    .not('[href="#0"]')
-    .click(function(event) {
-        // On-page links
+/* Helper function */
+function download_file(fileURL, fileName) {
+    // for non-IE
+    if (!window.ActiveXObject) {
+        var save = document.createElement("a");
+        save.href = fileURL;
+        save.target = "_blank";
+        var filename = fileURL.substring(fileURL.lastIndexOf("/") + 1);
+        save.download = fileName || filename;
         if (
-            location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') &&
-            location.hostname == this.hostname
+            navigator.userAgent.toLowerCase().match(/(ipad|iphone|safari)/) &&
+            navigator.userAgent.search("Chrome") < 0
         ) {
-            // Figure out element to scroll to
-            var target = $(this.hash);
-            target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-            // Does a scroll target exist?
-            if (target.length) {
-                // Only prevent default if animation is actually gonna happen
-                event.preventDefault();
-                $('html, body').animate({
-                    scrollTop: target.offset().top - 20
-                }, 600, function() {
-                    // Callback after animation
-                    // Must change focus!
-                    var $target = $(target);
-                    $target.focus();
-                    if ($target.is(":focus")) { // Checking if the target was focused
-                        return false;
-                    } else {
-                        $target.attr('tabindex', '-1'); // Adding tabindex for elements not focusable
-                        $target.focus(); // Set focus again
-                    };
-                });
-            }
+            document.location = save.href;
+            // window event not working here
+        } else {
+            var evt = new MouseEvent("click", {
+                view: window,
+                bubbles: true,
+                cancelable: false
+            });
+            save.dispatchEvent(evt);
+            (window.URL || window.webkitURL).revokeObjectURL(save.href);
         }
-    });
+    }
 
-// For async img loading
-echo.init(); */
+    // for IE < 11
+    else if (!!window.ActiveXObject && document.execCommand) {
+        var _window = window.open(fileURL, "_blank");
+        _window.document.close();
+        _window.document.execCommand("SaveAs", true, fileName || fileURL);
+        _window.close();
+    }
+}
