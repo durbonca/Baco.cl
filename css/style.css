@@ -163,7 +163,85 @@ nav>a:hover {
 }
 
 
-/* RESTAURANT */
+/* MENU */
+
+.tittle-item {
+    font-weight: bold;
+}
+
+.wrap-menu {
+    display: block;
+    width: 440px;
+    max-width: 440px;
+}
+
+.wrap-menu .category-item {
+    /* width: 80%; */
+    margin: 0 auto;
+    text-align: center;
+    font-size: 3em;
+    color: #0f0f0f;
+}
+
+.wrap-menu .category-item .ic-cate {
+    /*   display: inline-block; */
+    /*  width: 235px;
+    height: 27px; */
+}
+
+.wrap-menu .row-menu-wrap {
+    margin-bottom: 10px;
+}
+
+.wrap-menu .row-menu-wrap .row-menu {
+    display: table-row;
+}
+
+.wrap-menu .row-menu-wrap .row-menu .item-menu {
+    display: table-cell;
+    width: 90%;
+    font-size: 21px;
+    font-family: "Balthazar", serif;
+    color: #0f0f0f;
+}
+
+.wrap-menu .row-menu-wrap .row-menu .item-prise {
+    display: table-cell;
+    font-size: 21px;
+    font-family: "Balthazar", serif;
+    color: #0f0f0f;
+}
+
+.gold-line {
+    display: inline-block;
+    width: 100%;
+    height: 4px;
+    margin-bottom: 8px;
+    background-color: #9e9393;
+}
+
+.item-descr {
+    font-size: 16px;
+    font-family: "Balthazar", serif;
+    color: #0f0f0f;
+}
+
+.row-menu-wrap img {
+    width: 100%;
+    height: 0px;
+    transition: opacity 1.5s;
+    opacity: 0;
+}
+
+.row-menu-wrap:hover>img {
+    height: auto;
+    opacity: 1;
+}
+
+.row-menu-wrap:hover>.ver-imagen {
+    visibility: hidden;
+    margin-bottom: 0px;
+}
 
 
 /* BOURIQUE */
@@ -371,6 +449,12 @@ textarea {
 
 .delivery-time hr {
     border-top: 1px solid white;
+}
+
+.boton-botton-menu {
+    display: flex !important;
+    align-items: baseline !important;
+    justify-content: center !important;
 }
 
 @-webkit-keyframes slide-bottom {
