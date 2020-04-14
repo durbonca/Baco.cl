@@ -25,12 +25,13 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
     <link rel="stylesheet" href="css/animations.css">
+
 </head>
 
 <body id="body">
 
     <!--whatsapp button corner-->
-    <a target="_blank" href="https://wa.me/56959157833?text=Me%20gustaría%20hacer%20un%20pedido%20por%20despacho"><button class="button whatsapp px-3"> <h4> whatsapp &nbsp;<i class="fa fa-whatsapp whatsapp-icon"></i></h4></button></a>
+    <a target="_blank" href="https://wa.me/56959157833?text=Me%20gustaría%20hacer%20un%20pedido%20por%20despacho"><button class="button whatsapp btn btn-success"> whatsapp &nbsp;<i class="fa fa-whatsapp whatsapp-icon"></i></button></a>
     <!--whatsapp button corner End-->
 
     <div>
@@ -133,10 +134,9 @@
                     </div>
                     <div class="modal-body">
                         <ul>
-                            <li> Al hacer tu pedido vía teléfono o whatsapp, el tiempo de preparación es de 30 min por si lo viene a buscar, sino se le agrega el tiempo de despacho.</li>
-                            <li>Todo Despacho tiene un cobro de $4.000.</li>
-                            <li>Despachamos en Santiago Centro, Providencia, Las Condes y Vitacura.</li>
-                            <li>Nuestros horarios de despacho son todos los días de 10:30h // 19:30h</li>
+                            <li>Al hacer tu pedido vía teléfono o whatsapp, el tiempo de preparación es de 30 min por si lo viene a buscar, sino se le agrega el tiempo de despacho.</li>
+                            <!-- <li>Despachamos en Santiago Centro, Providencia, Las Condes y Vitacura con un cobro de $4.000. La Dehesa y Lo Barnechea con un cobro de $8.000.</li> -->
+                            <li>Nuestros horarios de despacho son todos los días de 10:30h // 19:30h.</li>
                             <li>Los despachos se pagan solo con transferencia.</li><br>
                             <button type="button" class="btn btn-info" data-toggle="modal" data-target="#tranferenciasModal">
                                 Datos de Transferencias
@@ -151,7 +151,6 @@
                 </div>
             </div>
         </div>
-
         <!-- Button trigger modal -->
 
 
@@ -218,6 +217,34 @@
                 </div>
             </div>
         </div>
+
+
+        <!--modal map-->
+
+        <!-- Extra large modal -->
+        <button type="button" class="btn btn-primary fixed-bottom" data-toggle="modal" data-target="#map-modal">Mapa Delivery <i class="fa fa-map-marker"></i></button>
+
+        <div id="map-modal" class="modal fade bd-example-modal-xl" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-xl" role="document">
+
+                <div class="modal-content">
+
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Mapa Precios Delivery</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                     <span aria-hidden="true">&times;</span>
+                     </button>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <img class="w-100" src="img/GoogleMaps.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
         <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -225,6 +252,7 @@
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.4/clipboard.min.js"></script>
         <script src="script/script.js"></script>
+
 </body>
 
 </html>
